@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+.image{
+  height: 100px;
+}
+.image-logo{
+  height: 40px;
+}
+.image-logo2{
+  height: 50px;
+}
+.image-logo2{
+  height: 70px;
+}
+.popup_img{
+  margin-left: 35%;
+}
+.footer{
+  margin-left: 35%;
+}
+.footerLink{
+  text-decoration: underline;
+  color: #385a64;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.chat_img{
+  height: 300px;
+}
+.font{
+  font-family: 'Cairo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+.grpUser{
+  font-size: 15px;
+  margin-left: 40px;
+  margin-top: -8px;
+  color: gray;
+}
+.picker{
+  position: relative;
+  width: 300px;
+}
+.review{
+  text-align: center;
+  margin-left: 90px;
+}
+.reviewsTab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width : 782px){
+  .reviewsTab{
+    flex-direction: column;
+  }
+}
