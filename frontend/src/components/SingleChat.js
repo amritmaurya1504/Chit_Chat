@@ -34,7 +34,7 @@ import io from "socket.io-client"
 import Lottie from "react-lottie";
 import animationData from "../animations/typing.json";
 const url = "http://localhost:8000";
-const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "https://chitchat-web.herokuapp.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
