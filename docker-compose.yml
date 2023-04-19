@@ -2,13 +2,13 @@ version: '3'
 services:
   react-app:
     build:
-      context: './client'
+      context: './frontend'
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     container_name: client-container
     volumes:
-      - ./client/src:/app/src:ro
+      - ./frontend/src:/app/src:ro
     environment:
       - REACT_APP_NAME=amrit
     networks:
@@ -19,13 +19,13 @@ services:
     #   - fileName
   node-app:
     build:
-      context: './server'
+      context: './backend'
       dockerfile: Dockerfile
     container_name: server-container
     ports:
       - "9000:9000"
     volumes:
-      - ./server/src:/app/src:ro 
+      - ./backend:/app/src:ro 
     networks:
       - mern-stact-network
     depends_on:
