@@ -1,0 +1,49 @@
+version: '3'
+services:
+  react-app:
+    build:
+      context: './client'
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: client-container
+    volumes:
+      - ./client/src:/app/src:ro
+    environment:
+      - REACT_APP_NAME=amrit
+    networks:
+      - mern-stact-network
+    depends_on:
+      - node-app
+    # env_file:
+    #   - fileName
+  node-app:
+    build:
+      context: './server'
+      dockerfile: Dockerfile
+    container_name: server-container
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./server/src:/app/src:ro 
+    networks:
+      - mern-stact-network
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    ports: 
+      - 27017:27017
+    container_name: database-container
+    networks:
+      - mern-stact-network
+    volumes:
+      - mongoData:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=secret
+      - MONGO_INITDB_DATABASE=notes
+networks:
+  mern-stact-network:
+volumes:
+  mongoData:
