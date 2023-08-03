@@ -140,9 +140,9 @@ export default function SignUpPage() {
     if (ext === 'jpg' || ext === 'png' || ext === 'jpeg') {
       const data = new FormData();
       data.append("file", pic);
-      data.append("upload_preset", "chit-chat-app");
-      data.append("cloud_name", "amritrajmaurya");
-      fetch("https://api.cloudinary.com/v1_1/amritrajmaurya/image/upload", {
+      data.append("upload_preset", "");
+      data.append("cloud_name", "");
+      fetch("", {
         method: "post",
         body: data,
       })
