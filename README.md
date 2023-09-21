@@ -12,7 +12,9 @@ ChitChat is a A Complete one to one and group Real-Time chatting application. Us
 
 ## Demo
 
-https://chitchat-web.herokuapp.com/
+[![Website](https://img.shields.io/website?label=Video-DEMO-YT&style=for-the-badge&url=https://youtu.be/m9yUiGvFrTU?si=ZzKiTNY4y3RMHhAe)](https://youtu.be/m9yUiGvFrTU?si=ZzKiTNY4y3RMHhAe)
+
+[![Website](https://img.shields.io/website?label=Chit-Chat-Live&style=for-the-badge&url=https://chit-chat-app.vercel.app/login)](https://chit-chat-app.vercel.app/login)
 
 ![Test Image 5](https://res.cloudinary.com/amritrajmaurya/image/upload/v1648135207/1_gfnev8.png)
 
